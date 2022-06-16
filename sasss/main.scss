@@ -73,15 +73,44 @@ li a:hover{
     text-align: center;
 }
 
-.gallery { 
-    padding-bottom: 3em;
-    padding-top: 1em;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 160px;
-    gap: .8em;
+// .gallery { 
+//     padding-bottom: 3em;
+//     padding-top: 1em;
+//     display: grid;
+//     grid-template-columns: repeat(4, 1fr);
+//     grid-auto-rows: 160px;
+//     gap: .8em;
+//     grid-template-areas: "bannerUno bannerUno bannerUno bannerUno"
+//  "RecetaUno RecetaDos RecetaTres RecetaCuatro"; 
 
-}
+// }
+
+/*Grilla */
+.grid-container {
+    display: grid;
+    margin: 40px 0 40px 0;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(3, 200px);
+    gap: 1px 1px;
+    text-align: center;
+    justify-content: stretch;
+    font-size: 1.5rem;
+    grid-template-areas: "bannerUno bannerUno bannerUno bannerUno"
+   "noticiaDos noticiaDos noticiaTres noticiaCuatro"
+   "noticiaCinco noticiaSeis noticiaSiete noticiaCuatro"; }
+  
+  
+
+.bannerUno {
+    grid-area: bannerUno;
+    background-color: #EFF4F7; }    
+
+.RecetaDos {
+        grid-area: noticiaDos;
+        background-color: #89FFFB; }
+      
+  
+    
 
 .gallery__img{
     width: 100%;
