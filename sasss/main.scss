@@ -88,6 +88,18 @@ li a:hover{
     height: 100%;
 }
 
+@each $recetas in Carnes, Vegetarianas, Sopas, Pizzas, Pastas {
+ .imgPortadaRecetas#{$recetas} {
+    width: 100%;
+    background-image: url(../img/portada#{$recetas}.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 550px;
+    position: relative;
+ }
+
+}
+
 @media screen and (win-width: 320px){
     .body {
         background-color: #ffffff;
